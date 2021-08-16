@@ -1,0 +1,48 @@
+ <html>
+
+ <head>
+ <title>Image recognition</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+ <link rel="stylesheet" href="style.css">
+
+</head> 
+ 
+<body>
+ <div class="container">
+
+  <center>
+
+   <br><br>
+
+   <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+   <b class="nameOfObj">headphones
+    <hr>lego ball
+    <hr>rasberry pi
+    <hr>mouse
+    <hr>cap
+    <hr>
+   </b>
+
+   <label>Webcam View - </label>
+   <div id="cam"></div>
+   <br><br>
+   <div id="res"></div>
+   <br><br>
+   <button onclick="takeNapShort();" class="btn btn-info">take snapshot</button>
+   <br><br>
+   <button onclick="cheke();" class="btn btn-success">identfi</button>
+   <br><br>
+   <p style="font-size: 22px;">Object : <span id="resObjName"></span></p>
+   <p style="font-size: 22px;">Accuracy : <span id="resObjAccu"></span></p>
+  </center>
+
+ </div>
+ <script src="main.js"></script>
+
+</body></html>
